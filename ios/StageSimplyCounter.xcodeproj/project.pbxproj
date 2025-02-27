@@ -9,22 +9,56 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-StageSimplyCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-StageSimplyCounter.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		40051A64FA9F4BE9B365A1DF /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C6CADC2727447A68FE0EA1B /* Montserrat-Medium.ttf */; };
+		6A61A7E0B4584D09BCD336E4 /* Inter18pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F43E04E2B764E24B98B58B4 /* Inter18pt-BoldItalic.ttf */; };
+		6A62C8077EBF47288683E9D2 /* Inter18pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFDFC40D8D84063B3F642E8 /* Inter18pt-SemiBold.ttf */; };
+		6C68A6577B6B4A2DAC51FA51 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81B418CE2EB74E84B817A1A1 /* SFProText-Semibold.ttf */; };
+		734EE39AB11F4C4CB8229B3B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E133BF34C3D34056A1DC8827 /* Montserrat-Bold.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		7A5E5721EB554EFBB9254D00 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14C1BE46D596471780AFAF7F /* Montserrat-SemiBold.ttf */; };
+		80E7825FDCE14DD3B2646A73 /* Inter18pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2A28CC592F84665AC10623D /* Inter18pt-Medium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		81B4A840E4544F8E87B93EBF /* KaushanScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 252A2298319C48C2BB5D6B66 /* KaushanScript-Regular.ttf */; };
+		833F4FEFA4F24705BE2FCF40 /* Inter18pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F313D9025604BBD85CBF044 /* Inter18pt-Bold.ttf */; };
+		871B403A0FFC45D6B34CCEB3 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0A44A7BEAE44B5A92F5D4B2 /* SFProText-Regular.ttf */; };
+		9EA2A05599F0456F944B88F1 /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F61424297888469CBD02B99B /* SFProText-Medium.ttf */; };
+		ABE5B9BD27C74833BAE1BCE5 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E302807C07A4781BDF82814 /* SFProText-Bold.ttf */; };
+		AECB9B4C23E44B389066A63B /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A423B6D4C377436C92C2C90F /* Montserrat-Black.ttf */; };
+		C025D02E12D3439B884CD63F /* Inter18pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1636652FE314EC6A6451DD6 /* Inter18pt-Italic.ttf */; };
 		C05716714AB2D6B01046DA42 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		D3AF414EDC0A4377B531437B /* SFProText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3991E8E24E44498A573173B /* SFProText-RegularItalic.ttf */; };
+		DAEB0E986FFF42908584D9C4 /* Inter18pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C338E7BB87C407C8BC6C1A2 /* Inter18pt-Regular.ttf */; };
+		F3F4CADA14BC440585F496A1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F3FF672D67460EA4CB2930 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E302807C07A4781BDF82814 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.ttf"; path = "../src/assets/fonts/SFProText-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* StageSimplyCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StageSimplyCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StageSimplyCounter/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StageSimplyCounter/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = StageSimplyCounter/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		14C1BE46D596471780AFAF7F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		252A2298319C48C2BB5D6B66 /* KaushanScript-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "KaushanScript-Regular.ttf"; path = "../src/assets/fonts/KaushanScript-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-StageSimplyCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StageSimplyCounter.debug.xcconfig"; path = "Target Support Files/Pods-StageSimplyCounter/Pods-StageSimplyCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		3C338E7BB87C407C8BC6C1A2 /* Inter18pt-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter18pt-Regular.ttf"; path = "../src/assets/fonts/Inter18pt-Regular.ttf"; sourceTree = "<group>"; };
+		4F313D9025604BBD85CBF044 /* Inter18pt-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter18pt-Bold.ttf"; path = "../src/assets/fonts/Inter18pt-Bold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-StageSimplyCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StageSimplyCounter.release.xcconfig"; path = "Target Support Files/Pods-StageSimplyCounter/Pods-StageSimplyCounter.release.xcconfig"; sourceTree = "<group>"; };
+		5C6CADC2727447A68FE0EA1B /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../src/assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-StageSimplyCounter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StageSimplyCounter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F43E04E2B764E24B98B58B4 /* Inter18pt-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter18pt-BoldItalic.ttf"; path = "../src/assets/fonts/Inter18pt-BoldItalic.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = StageSimplyCounter/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StageSimplyCounter/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81B418CE2EB74E84B817A1A1 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Semibold.ttf"; path = "../src/assets/fonts/SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		A423B6D4C377436C92C2C90F /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../src/assets/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		B0A44A7BEAE44B5A92F5D4B2 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Regular.ttf"; path = "../src/assets/fonts/SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		BCFDFC40D8D84063B3F642E8 /* Inter18pt-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter18pt-SemiBold.ttf"; path = "../src/assets/fonts/Inter18pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		C8F3FF672D67460EA4CB2930 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		D2A28CC592F84665AC10623D /* Inter18pt-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter18pt-Medium.ttf"; path = "../src/assets/fonts/Inter18pt-Medium.ttf"; sourceTree = "<group>"; };
+		E133BF34C3D34056A1DC8827 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E1636652FE314EC6A6451DD6 /* Inter18pt-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter18pt-Italic.ttf"; path = "../src/assets/fonts/Inter18pt-Italic.ttf"; sourceTree = "<group>"; };
+		E3991E8E24E44498A573173B /* SFProText-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-RegularItalic.ttf"; path = "../src/assets/fonts/SFProText-RegularItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F61424297888469CBD02B99B /* SFProText-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Medium.ttf"; path = "../src/assets/fonts/SFProText-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +73,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08E4EDC4148C4EDA88E909B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F313D9025604BBD85CBF044 /* Inter18pt-Bold.ttf */,
+				5F43E04E2B764E24B98B58B4 /* Inter18pt-BoldItalic.ttf */,
+				E1636652FE314EC6A6451DD6 /* Inter18pt-Italic.ttf */,
+				D2A28CC592F84665AC10623D /* Inter18pt-Medium.ttf */,
+				3C338E7BB87C407C8BC6C1A2 /* Inter18pt-Regular.ttf */,
+				BCFDFC40D8D84063B3F642E8 /* Inter18pt-SemiBold.ttf */,
+				252A2298319C48C2BB5D6B66 /* KaushanScript-Regular.ttf */,
+				A423B6D4C377436C92C2C90F /* Montserrat-Black.ttf */,
+				E133BF34C3D34056A1DC8827 /* Montserrat-Bold.ttf */,
+				5C6CADC2727447A68FE0EA1B /* Montserrat-Medium.ttf */,
+				C8F3FF672D67460EA4CB2930 /* Montserrat-Regular.ttf */,
+				14C1BE46D596471780AFAF7F /* Montserrat-SemiBold.ttf */,
+				0E302807C07A4781BDF82814 /* SFProText-Bold.ttf */,
+				F61424297888469CBD02B99B /* SFProText-Medium.ttf */,
+				B0A44A7BEAE44B5A92F5D4B2 /* SFProText-Regular.ttf */,
+				E3991E8E24E44498A573173B /* SFProText-RegularItalic.ttf */,
+				81B418CE2EB74E84B817A1A1 /* SFProText-Semibold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* StageSimplyCounter */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +133,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				08E4EDC4148C4EDA88E909B1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +220,23 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				C05716714AB2D6B01046DA42 /* PrivacyInfo.xcprivacy in Resources */,
+				833F4FEFA4F24705BE2FCF40 /* Inter18pt-Bold.ttf in Resources */,
+				6A61A7E0B4584D09BCD336E4 /* Inter18pt-BoldItalic.ttf in Resources */,
+				C025D02E12D3439B884CD63F /* Inter18pt-Italic.ttf in Resources */,
+				80E7825FDCE14DD3B2646A73 /* Inter18pt-Medium.ttf in Resources */,
+				DAEB0E986FFF42908584D9C4 /* Inter18pt-Regular.ttf in Resources */,
+				6A62C8077EBF47288683E9D2 /* Inter18pt-SemiBold.ttf in Resources */,
+				81B4A840E4544F8E87B93EBF /* KaushanScript-Regular.ttf in Resources */,
+				AECB9B4C23E44B389066A63B /* Montserrat-Black.ttf in Resources */,
+				734EE39AB11F4C4CB8229B3B /* Montserrat-Bold.ttf in Resources */,
+				40051A64FA9F4BE9B365A1DF /* Montserrat-Medium.ttf in Resources */,
+				F3F4CADA14BC440585F496A1 /* Montserrat-Regular.ttf in Resources */,
+				7A5E5721EB554EFBB9254D00 /* Montserrat-SemiBold.ttf in Resources */,
+				ABE5B9BD27C74833BAE1BCE5 /* SFProText-Bold.ttf in Resources */,
+				9EA2A05599F0456F944B88F1 /* SFProText-Medium.ttf in Resources */,
+				871B403A0FFC45D6B34CCEB3 /* SFProText-Regular.ttf in Resources */,
+				D3AF414EDC0A4377B531437B /* SFProText-RegularItalic.ttf in Resources */,
+				6C68A6577B6B4A2DAC51FA51 /* SFProText-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +349,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stage.simply.counter.app;
 				PRODUCT_NAME = StageSimplyCounter;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -300,7 +376,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stage.simply.counter.app;
 				PRODUCT_NAME = StageSimplyCounter;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,10 +452,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +521,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
