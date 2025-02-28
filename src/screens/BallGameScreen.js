@@ -135,9 +135,10 @@ const BallGameScreen = ({ setSelectedSPage }) => {
 
         }}>
           <TouchableOpacity onPress={() => {
-            // setSelectedSPage('Home');
             if (isGameStarted) setModalVisible(true);
-            else setSelectedSPage('Home');
+            else {
+              // setSelectedSPage('Home');
+            }
           }}
             style={{
               marginTop: dimensions.height * 0.005,
@@ -502,7 +503,7 @@ const BallGameScreen = ({ setSelectedSPage }) => {
             </Text>
             <TouchableOpacity
               onPress={() => {
-                setSelectedSPage('Home');
+                // setSelectedSPage('Home');
               }}
               style={{
                 marginTop: dimensions.height * 0.0190002,
