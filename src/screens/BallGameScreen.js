@@ -467,13 +467,13 @@ const BallGameScreen = ({ setSelectedSPage }) => {
           zIndex: 1000,
         }}>
           <View style={{
+            paddingVertical: dimensions.height * 0.05,
             width: dimensions.width * 0.9,
-            backgroundColor: 'white',
             borderRadius: dimensions.width * 0.05,
             alignSelf: 'center',
             alignItems: 'center',
             justifyContent: 'space-between',
-            paddingVertical: dimensions.height * 0.05,
+            backgroundColor: 'white',
           }}>
             <Text
               style={{
@@ -482,20 +482,21 @@ const BallGameScreen = ({ setSelectedSPage }) => {
                 fontSize: dimensions.width * 0.064,
                 textAlign: 'center',
                 textTransform: 'uppercase',
-                marginTop: dimensions.height * 0.016
+                marginTop: dimensions.height * 0.014,
               }}>
-              Pause
+              Exit pause
             </Text>
 
             <Text
               style={{
+                fontWeight: 700,
                 fontFamily: fontMontserratRegular,
-                color: 'black',
                 fontSize: dimensions.width * 0.046,
                 textAlign: 'center',
-                fontWeight: 700,
                 textTransform: 'uppercase',
-                marginTop: dimensions.height * 0.025
+                color: 'black',
+                marginTop: dimensions.height * 0.025,
+                marginBottom: dimensions.height * 0.03,
               }}>
               Are you sure{'\n'}you want to exit?
             </Text>
@@ -504,12 +505,12 @@ const BallGameScreen = ({ setSelectedSPage }) => {
                 setSelectedSPage('Home');
               }}
               style={{
+                marginTop: dimensions.height * 0.0190002,
                 marginTop: dimensions.height * 0.05,
                 alignSelf: 'center',
                 backgroundColor: '#2E4150',
-                borderRadius: dimensions.width * 0.019,
-                width: dimensions.width * 0.75,
-                marginTop: dimensions.height * 0.019,
+                borderRadius: dimensions.width * 0.023,
+                width: dimensions.width * 0.77,
                 paddingVertical: dimensions.height * 0.019,
               }}
             >

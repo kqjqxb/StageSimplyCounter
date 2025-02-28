@@ -27,7 +27,7 @@ const fontKaushanScript = 'KaushanScript-Regular';
 const HomeScreen = () => {
 
   const [dimensions, setDimensions] = useState(Dimensions.get('window'));
-  const [selectedSPage, setSelectedSPage] = useState('Home');
+  const [selectedSPage, setSelectedSPage] = useState('Loading');
   const [isAddCounterVisible, setIsAddCounterVisible] = useState(false);
   const [title, setTitle] = useState('');
   const [date, setDate] = useState(null);
