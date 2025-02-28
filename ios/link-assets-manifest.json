@@ -50,6 +50,22 @@
       "sha1": "d491c9d0af61faef59ca807737b560170f547f5b"
     },
     {
+      "path": "src/assets/fonts/MontserratAlternates-Bold.ttf",
+      "sha1": "ee2c78fd0af8aa895f15a93f9a61e13a960c17f3"
+    },
+    {
+      "path": "src/assets/fonts/MontserratAlternates-Medium.ttf",
+      "sha1": "f3c1c9e778680061c35ec512c918f1a630868872"
+    },
+    {
+      "path": "src/assets/fonts/MontserratAlternates-Regular.ttf",
+      "sha1": "8a441a013bb65edb42d747efc85caba6d4149464"
+    },
+    {
+      "path": "src/assets/fonts/MontserratAlternates-SemiBold.ttf",
+      "sha1": "6127c80406ce668cd1d623c40e79a62de3f5d2e0"
+    },
+    {
       "path": "src/assets/fonts/SFProText-Bold.ttf",
       "sha1": "632e6cea171b276e5dd1f13b152c702fbf562cee"
     },

@@ -1,8 +1,8 @@
 import React from 'react';
-import InterestingNiagaraStack from './StackNavigator';
+import StageSimplyCounterStack from './StackNavigator';
 
 function App() {
-  return <InterestingNiagaraStack />;
+  return <StageSimplyCounterStack />;
 }
 
 export default App;

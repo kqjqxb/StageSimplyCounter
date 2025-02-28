@@ -5,7 +5,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import DeviceInfo from 'react-native-device-info';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import HomeScreen from './src/screens/HomeScreen';
-import OnboardingScreen from './src/screens/OnboardingScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { UserProvider, UserContext } from './src/context/UserContext';
@@ -16,7 +15,7 @@ import { loadUserData } from './src/redux/userSlice';
 
 const Stack = createNativeStackNavigator();
 
-const InterestingNiagaraStack = () => {
+const StageSimplyCounterStack = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Provider store={store}>
@@ -36,7 +35,7 @@ const AppNavigator = () => {
   const { user, setUser } = useContext(UserContext);
 
 
-  const [initializingNiagaraApp, setInitializingNiagaraApp] = useState(true);
+  const [initializingStageSimplyApp, setInitializingStageSimplyApp] = useState(true);
 
   useEffect(() => {
     dispatch(loadUserData());
@@ -47,49 +46,41 @@ const AppNavigator = () => {
       try {
         const deviceId = await DeviceInfo.getUniqueId();
         const storageKey = `currentUser_${deviceId}`;
-        const storedWolfUser = await AsyncStorage.getItem(storageKey);
-        const isWasNiagaraVisible = await AsyncStorage.getItem('isWasNiagaraVisible');
+        const storedStageSimplyUser = await AsyncStorage.getItem(storageKey);
 
-        if (storedWolfUser) {
-          setUser(JSON.parse(storedWolfUser));
-          setIsNiagaraOnboardVisible(false);
-        } else if (isWasNiagaraVisible) {
-          setIsNiagaraOnboardVisible(false);
-        } else {
-          setIsNiagaraOnboardVisible(true);
-          await AsyncStorage.setItem('isWasNiagaraVisible', 'true');
+        if (storedStageSimplyUser) {
+          setUser(JSON.parse(storedStageSimplyUser));
         }
       } catch (error) {
         console.error('Error loading of cur user', error);
       } finally {
-        setInitializingNiagaraApp(false);
+        setInitializingStageSimplyApp(false);
       }
     };
     loadNiagaraUser();
   }, [setUser]);
 
-  if (initializingNiagaraApp) {
+  if (initializingStageSimplyApp) {
     return (
       <View style={{
-        backgroundColor: '#008B47',
-        alignItems: 'center',
         flex: 1,
+        backgroundColor: '#2E4150',
         justifyContent: 'center',
+        alignItems: 'center',
       }}>
-        <ActivityIndicator size="large" color="#FFC10E" />
+        <ActivityIndicator size="large" color="white" />
       </View>
     );
   }
 
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName={isNiagaraOnboardVisible ? 'OnboardingScreen' : 'Home'}>
+        <Stack.Navigator initialRouteName={'Home'}>
           <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-          <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 
-export default InterestingNiagaraStack;
+export default StageSimplyCounterStack;
