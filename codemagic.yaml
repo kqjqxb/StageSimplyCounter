@@ -52,7 +52,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - abrahamwatkins1994@gmail.com       # <----
+          - debbischor@gmail.com       # <----
         notify:
           success: true
           failure: false
