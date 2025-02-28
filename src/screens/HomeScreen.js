@@ -27,10 +27,7 @@ const fontKaushanScript = 'KaushanScript-Regular';
 const HomeScreen = () => {
 
   const [dimensions, setDimensions] = useState(Dimensions.get('window'));
-  const [selectedScreen, setSelectedScreen] = useState('Home');
-  const [selectedPlace, setSelectedPlace] = useState(null);
-  const [isPlaceVisible, setIsPlaceVisible] = useState(false);
-  const [isPlaceDetailsVisible, setIsPlaceDetailsVisible] = useState(false);
+  const [selectedSPage, setSelectedSPage] = useState('Home');
   const [isAddCounterVisible, setIsAddCounterVisible] = useState(false);
   const [title, setTitle] = useState('');
   const [date, setDate] = useState(null);
@@ -55,12 +52,8 @@ const HomeScreen = () => {
     }
   }, [isAddCounterVisible]);
 
-  useEffect(() => {
-    console.log('selectedPlace: ', selectedPlace);
-  }, [selectedPlace]);
 
-
-  const loadSettings = async () => {
+  const loadStageSettings = async () => {
     try {
       const vibrationValue = await AsyncStorage.getItem('isVibrationEnabled');
       const soundEffValue = await AsyncStorage.getItem('isSoundEffEnabled');
@@ -73,8 +66,8 @@ const HomeScreen = () => {
   };
 
   useEffect(() => {
-    loadSettings();
-  }, [isVibrationEnabled, selectedScreen]);
+    loadStageSettings();
+  }, [isVibrationEnabled, selectedSPage]);
 
 
   const handleDateChange = (event, selectedDate) => {
@@ -86,15 +79,7 @@ const HomeScreen = () => {
 
   };
 
-  useEffect(() => {
-    if (showDatePicker) {
-      setShowTimePicker(false);
-    } else if (showTimePicker) {
-      setShowDatePicker(false);
-    }
-  }, [showDatePicker, showTimePicker]);
-
-  const handleTimeChange = (event, selectedTime) => {
+  const handleStageTimeChange = (event, selectedTime) => {
     if (selectedTime) {
       const currentTime = new Date();
       if (date && date.toDateString() === currentTime.toDateString()) {
@@ -107,7 +92,7 @@ const HomeScreen = () => {
     }
   };
 
-  const formatDate = (date) => {
+  const formatStageDate = (date) => {
     if (!date) return 'Date';
     const day = String(date.getDate()).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -115,7 +100,7 @@ const HomeScreen = () => {
     return `${day}.${month}.${year}`;
   };
 
-  const formatTime = (time) => {
+  const formatStageTime = (time) => {
     if (!time) return 'Time';
     return time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   };
@@ -129,7 +114,7 @@ const HomeScreen = () => {
     try {
       const existingCounters = await AsyncStorage.getItem('counters');
       const counters = existingCounters ? JSON.parse(existingCounters) : [];
-      setCounters(counters); // Завантажуємо всі збережені counters
+      setCounters(counters); 
     } catch (error) {
       console.error('Error loading counters:', error);
     }
@@ -177,13 +162,6 @@ const HomeScreen = () => {
     }
   };
 
-
-  useEffect(() => {
-    console.log('counters: ', counters);
-  }, [])
-
-
-
   const sortCounters = (sortBy) => {
     let sortedCounters = [...counters];
     if (sortBy === 'Date') {
@@ -202,7 +180,7 @@ const HomeScreen = () => {
       width: dimensions.width,
       backgroundColor: '#2E4150',
     }}>
-      {selectedScreen === 'Home' ? (
+      {selectedSPage === 'Home' ? (
         <View style={{
           flex: 1,
         }}>
@@ -470,7 +448,7 @@ const HomeScreen = () => {
                           textAlign: 'center',
                           fontWeight: 700,
                         }}>
-                        {formatDate(date)}
+                        {formatStageDate(date)}
                       </Text>
                     </TouchableOpacity>
 
@@ -497,7 +475,7 @@ const HomeScreen = () => {
                           textAlign: 'center',
                           fontWeight: 700,
                         }}>
-                        {formatTime(time)}
+                        {formatStageTime(time)}
                       </Text>
                     </TouchableOpacity>
                   </View>
@@ -697,8 +675,7 @@ const HomeScreen = () => {
                             fontWeight: 400,
                             marginLeft: dimensions.width * 0.03,
                           }}>
-                          {/* {formatDate(count.date)} {formatTime(count.time)} */}
-                          {formatDate(new Date(count.date))}   {formatTime(new Date(count.time))}
+                          {formatStageDate(new Date(count.date))}   {formatStageTime(new Date(count.time))}
                         </Text>
                       </View>
 
@@ -730,9 +707,7 @@ const HomeScreen = () => {
                           }}>
                           Counted
                         </Text>
-
                       </View>
-
                     </View>
                   ))}
                 </>
@@ -743,17 +718,17 @@ const HomeScreen = () => {
 
 
 
-      ) : selectedScreen === 'Settings' ? (
-        <SettingsScreen setSelectedScreen={setSelectedScreen} isVibrationEnabled={isVibrationEnabled} setVibrationEnabled={setVibrationEnabled} isSoundEffEnabled={isSoundEffEnabled} setSoundEffEnabled={setSoundEffEnabled} />
-      ) : selectedScreen === 'Game' ? (
-        <BallGameScreen setSelectedScreen={setSelectedScreen} />
-      ) : selectedScreen === 'Loading' ? (
-        <LoadingScreen setSelectedScreen={setSelectedScreen} />
+      ) : selectedSPage === 'Settings' ? (
+        <SettingsScreen setSelectedSPage={setSelectedSPage} isVibrationEnabled={isVibrationEnabled} setVibrationEnabled={setVibrationEnabled} isSoundEffEnabled={isSoundEffEnabled} setSoundEffEnabled={setSoundEffEnabled} />
+      ) : selectedSPage === 'Game' ? (
+        <BallGameScreen setSelectedSPage={setSelectedSPage} />
+      ) : selectedSPage === 'Loading' ? (
+        <LoadingScreen setSelectedSPage={setSelectedSPage} />
       ) : null}
 
 
 
-      {selectedScreen !== 'Game' && (
+      {selectedSPage !== 'Game' && (
         <View style={{
           flexDirection: 'row',
           alignItems: 'center',
@@ -770,7 +745,7 @@ const HomeScreen = () => {
         }}>
           <TouchableOpacity
             onPress={() => {
-              setSelectedScreen('Settings')
+              setSelectedSPage('Settings')
             }}
             style={{
               backgroundColor: '#2E4150',
@@ -833,7 +808,7 @@ const HomeScreen = () => {
 
           <TouchableOpacity
             onPress={() => [
-              setSelectedScreen('Game')
+              setSelectedSPage('Game')
             ]}
             style={{
               backgroundColor: '#4346FF',
@@ -898,7 +873,7 @@ const HomeScreen = () => {
                 mode="time"
                 display="spinner"
                 onChange={(event, selectedTime) => {
-                  handleTimeChange(event, selectedTime);
+                  handleStageTimeChange(event, selectedTime);
                 }}
                 style={{
                   backgroundColor: 'white',

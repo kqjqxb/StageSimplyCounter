@@ -6,13 +6,13 @@
 // } from 'react-native';
 // import * as Animatable from 'react-native-animatable';
 
-// const LoadingScreen = ({ setSelectedScreen }) => {
+// const LoadingScreen = ({ setSelectedSPage }) => {
 //   const [dimensions, setDimensions] = useState(Dimensions.get('window'));
 //   const [isImageVisible, setIsImageVisible] = useState(false);
 
 //   useEffect(() => {
 //     setTimeout(() => {
-//       setSelectedScreen('Home');
+//       setSelectedSPage('Home');
 //     }, 5000);
 //   }, []);
 

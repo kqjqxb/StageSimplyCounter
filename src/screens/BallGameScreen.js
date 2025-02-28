@@ -1,4 +1,3 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useState, useRef, useEffect, use } from 'react';
 import {
   View,
@@ -10,12 +9,10 @@ import {
   PanResponder,
   Animated,
   Modal,
-  ImageBackground,
   TextInput,
-  Easing,
 } from 'react-native';
 import { BlurView } from '@react-native-community/blur';
-import { ArrowLeftIcon, ChevronLeftIcon } from 'react-native-heroicons/solid';
+import { ChevronLeftIcon } from 'react-native-heroicons/solid';
 
 const fontMontserratBold = 'Montserrat-Bold';
 const fontMontserratRegular = 'Montserrat-Regular';
@@ -24,15 +21,8 @@ const fontKaushanScript = 'KaushanScript-Regular';
 const fontMontserratAlternatesBold = 'MontserratAlternates-Bold';
 const fontMontserratAlternatesRegular = 'MontserratAlternates-Regular';
 
-const formatTime = (time) => {
-  const minutes = Math.floor(time / 60);
-  const seconds = time % 60;
-  return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-};
 
-
-
-const BallGameScreen = ({ setSelectedScreen }) => {
+const BallGameScreen = ({ setSelectedSPage }) => {
   const [dimensions] = useState(Dimensions.get('window'));
 
   const [modalVisible, setModalVisible] = useState(false);
@@ -145,9 +135,9 @@ const BallGameScreen = ({ setSelectedScreen }) => {
 
         }}>
           <TouchableOpacity onPress={() => {
-            // setSelectedScreen('Home');
+            // setSelectedSPage('Home');
             if (isGameStarted) setModalVisible(true);
-            else setSelectedScreen('Home');
+            else setSelectedSPage('Home');
           }}
             style={{
               marginTop: dimensions.height * 0.005,
@@ -511,7 +501,7 @@ const BallGameScreen = ({ setSelectedScreen }) => {
             </Text>
             <TouchableOpacity
               onPress={() => {
-                setSelectedScreen('Home');
+                setSelectedSPage('Home');
               }}
               style={{
                 marginTop: dimensions.height * 0.05,

@@ -5,32 +5,24 @@ import { ChevronLeftIcon } from 'react-native-heroicons/solid';
 
 const fontMontserratRegular = 'Montserrat-Regular';
 const fontMontserratBold = 'Montserrat-Bold';
-const fontIceLandRegular = 'Iceland-Regular';
 
-const fontMontserratBlack = 'Montserrat-Black';
-const fontKaushanScript = 'KaushanScript-Regular';
-
-const SettingsScreen = ({ setSelectedScreen, isVibrationEnabled, setVibrationEnabled, isSoundEffEnabled, setSoundEffEnabled }) => {
+const SettingsScreen = ({ setSelectedSPage, isVibrationEnabled, setVibrationEnabled, isSoundEffEnabled, setSoundEffEnabled }) => {
     const [dimensions, setDimensions] = useState(Dimensions.get('window'));
 
 
     const toggleVibrationSwitch = () => {
         const newValue = !isVibrationEnabled;
         setVibrationEnabled(newValue);
-        saveSettings('isVibrationEnabled', newValue);
+        saveStageSettings('isVibrationEnabled', newValue);
     };
 
     const toggleSoundEffSwitch = () => {
         const newValue = !isSoundEffEnabled;
         setSoundEffEnabled(newValue);
-        saveSettings('isSoundEffEnabled', newValue);
+        saveStageSettings('isSoundEffEnabled', newValue);
     };
 
-
-
-
-
-    const saveSettings = async (key, value) => {
+    const saveStageSettings = async (key, value) => {
         try {
             await AsyncStorage.setItem(key, JSON.stringify(value));
         } catch (error) {
@@ -59,7 +51,7 @@ const SettingsScreen = ({ setSelectedScreen, isVibrationEnabled, setVibrationEna
 
                 }}>
                     <TouchableOpacity onPress={() => {
-                        setSelectedScreen('Home');
+                        setSelectedSPage('Home');
                     }}>
                         <ChevronLeftIcon size={dimensions.height * 0.05} color='white' />
                     </TouchableOpacity>
@@ -76,10 +68,9 @@ const SettingsScreen = ({ setSelectedScreen, isVibrationEnabled, setVibrationEna
                         Settings
                     </Text>
                     <View></View>
-
                 </SafeAreaView>
-
             </View>
+
             <SafeAreaView style={{ marginTop: dimensions.height * 0.16, width: '100%', }}>
                 <View style={{
                     width: dimensions.width * 0.9,
@@ -113,7 +104,6 @@ const SettingsScreen = ({ setSelectedScreen, isVibrationEnabled, setVibrationEna
                         />
                     </View>
 
-
                     <View style={{
                         flexDirection: 'row',
                         justifyContent: 'space-between',
@@ -137,9 +127,6 @@ const SettingsScreen = ({ setSelectedScreen, isVibrationEnabled, setVibrationEna
                         />
                     </View>
                 </View>
-
-
-
             </SafeAreaView>
         </View>
     );
