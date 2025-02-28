@@ -10,9 +10,9 @@ workflows:
         XCODE_WORKSPACE: "StageSimplyCounter.xcworkspace" # <----
         XCODE_SCHEME: "StageSimplyCounter" # <----
         BUNDLE_ID: "com.stage.simply.counter.app" # <----
-        APP_STORE_APP_ID: 6742541269 # <----
-        APP_STORE_CONNECT_KEY_ID: "795D4YF6ZQ" # <----
-        APP_STORE_CONNECT_ISSUER_ID: "74435a48-4ac8-40c0-9d03-5d47c0c4b823" # <----
+        APP_STORE_APP_ID: 6742645395 # <----
+        APP_STORE_CONNECT_KEY_ID: "5S4AS6ABB8" # <----
+        APP_STORE_CONNECT_ISSUER_ID: "0d89136f-e8c6-4b59-9c8c-a937493d1b66" # <----
         node: latest
         xcode: latest
         cocoapods: default
