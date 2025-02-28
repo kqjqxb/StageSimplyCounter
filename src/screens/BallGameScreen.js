@@ -77,7 +77,7 @@ const BallGameScreen = ({ setSelectedSPage }) => {
   ).current;
 
 
-  const scoredRef = useRef(false);
+  const scoredStageRef = useRef(false);
 
   useEffect(() => {
     const listenerId = ballY.addListener(({ value }) => {
@@ -86,14 +86,14 @@ const BallGameScreen = ({ setSelectedSPage }) => {
       const midZoneRight = dimensions.width / 2 + dimensions.width * 0.07 - dimensions.width * 0.5;;
       if (
         effectiveY <= dimensions.height * 0.21 &&
-        !scoredRef.current &&
+        !scoredStageRef.current &&
         ballX._value >= midZoneLeft &&
         ballX._value <= midZoneRight
       ) {
         setScore(prevScore => prevScore + 1);
-        scoredRef.current = true;
+        scoredStageRef.current = true;
       } else if (effectiveY > dimensions.height * 0.21) {
-        scoredRef.current = false;
+        scoredStageRef.current = false;
       }
     });
     return () => ballY.removeListener(listenerId);

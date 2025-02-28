@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   Image,
   Dimensions,
-  ImageBackground,
   SafeAreaView,
   TouchableWithoutFeedback,
   Alert,
@@ -20,7 +19,6 @@ import { BlurView } from '@react-native-community/blur';
 import SettingsScreen from './SettingsScreen';
 
 const fontMontserratBold = 'Montserrat-Bold';
-const fontMontserratBlack = 'Montserrat-Black';
 const fontMontserratRegular = 'Montserrat-Regular';
 const fontKaushanScript = 'KaushanScript-Regular';
 
@@ -205,11 +203,8 @@ const HomeScreen = () => {
                 }}>
                 Stage
               </Text>
-
             </SafeAreaView>
-
           </View>
-
 
           <View style={{
             marginTop: dimensions.height * 0.185,
@@ -301,8 +296,6 @@ const HomeScreen = () => {
               </View>
             )}
 
-
-
             <TouchableOpacity
               onPress={() => {
                 setIsEditingNow((prev) => !prev);
@@ -338,6 +331,7 @@ const HomeScreen = () => {
               </Text>
             </TouchableOpacity>
           </View>
+
           <ScrollView ref={scrollViewRef} showsVerticalScrollIndicator={false}>
             <View style={{
               width: dimensions.width,
@@ -382,7 +376,6 @@ const HomeScreen = () => {
                     }}>
                     Add counter
                   </Text>
-
                 </TouchableOpacity>
               ) : (
                 <View style={{
@@ -419,7 +412,6 @@ const HomeScreen = () => {
                     }}
                   />
 
-
                   <View style={{
                     flexDirection: 'row',
                     justifyContent: 'space-between',
@@ -452,8 +444,6 @@ const HomeScreen = () => {
                       </Text>
                     </TouchableOpacity>
 
-
-
                     <TouchableOpacity
                       onPress={() => setShowTimePicker(true)}
                       style={{
@@ -479,7 +469,6 @@ const HomeScreen = () => {
                       </Text>
                     </TouchableOpacity>
                   </View>
-
 
                   <View style={{
                     flexDirection: 'row',
@@ -544,8 +533,6 @@ const HomeScreen = () => {
                         </Text>
                       </TouchableOpacity>
 
-
-
                       <TouchableOpacity
                         onPress={() => {
                           setCountsCount((prev) => prev - 1);
@@ -571,11 +558,8 @@ const HomeScreen = () => {
                           -
                         </Text>
                       </TouchableOpacity>
-
                     </View>
-
                   </View>
-
                   <TouchableOpacity
                     onPress={() => {
                       handleSaveCounter();
@@ -600,9 +584,7 @@ const HomeScreen = () => {
                       }}>
                       Save counter
                     </Text>
-
                   </TouchableOpacity>
-
                 </View>
               )}
 
@@ -716,8 +698,6 @@ const HomeScreen = () => {
           </ScrollView>
         </View>
 
-
-
       ) : selectedSPage === 'Settings' ? (
         <SettingsScreen setSelectedSPage={setSelectedSPage} isVibrationEnabled={isVibrationEnabled} setVibrationEnabled={setVibrationEnabled} isSoundEffEnabled={isSoundEffEnabled} setSoundEffEnabled={setSoundEffEnabled} />
       ) : selectedSPage === 'Game' ? (
@@ -725,8 +705,6 @@ const HomeScreen = () => {
       ) : selectedSPage === 'Loading' ? (
         <LoadingScreen setSelectedSPage={setSelectedSPage} />
       ) : null}
-
-
 
       {selectedSPage !== 'Game' && (
         <View style={{
@@ -765,9 +743,7 @@ const HomeScreen = () => {
               }}
               resizeMode="contain"
             />
-
           </TouchableOpacity>
-
 
           <TouchableOpacity
             onPress={() => {
@@ -802,9 +778,7 @@ const HomeScreen = () => {
               }}>
               Add Сounter
             </Text>
-
           </TouchableOpacity>
-
 
           <TouchableOpacity
             onPress={() => [
@@ -828,7 +802,6 @@ const HomeScreen = () => {
               }}
               resizeMode="contain"
             />
-
           </TouchableOpacity>
         </View>
       )}
@@ -861,7 +834,6 @@ const HomeScreen = () => {
             width: dimensions.width,
             height: dimensions.height,
           }}>
-
             <View style={{
 
               width: dimensions.width,
@@ -911,13 +883,11 @@ const HomeScreen = () => {
                   }}>
                   Ok
                 </Text>
-
               </TouchableOpacity>
             </View>
           </TouchableWithoutFeedback>
         </SafeAreaView>
       </Modal>
-
 
       <Modal
         animationType="fade"
@@ -1042,7 +1012,6 @@ const HomeScreen = () => {
               Are you sure you want to delete this item?
             </Text>
 
-
             <View style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -1067,7 +1036,6 @@ const HomeScreen = () => {
                   Yes, delete
                 </Text>
               </TouchableOpacity>
-
 
               <TouchableOpacity onPress={(() => {
                 setModalVisible(false);
