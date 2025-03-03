@@ -137,7 +137,7 @@ const BallGameScreen = ({ setSelectedSPage }) => {
           <TouchableOpacity onPress={() => {
             if (isGameStarted) setModalVisible(true);
             else {
-              // setSelectedSPage('Home');
+              setSelectedSPage('Home');
             }
           }}
             style={{
@@ -202,7 +202,6 @@ const BallGameScreen = ({ setSelectedSPage }) => {
               fontSize: dimensions.width * 0.055,
               textAlign: 'left',
               marginTop: dimensions.height * 0.019,
-              // alignSelf: 'center',
 
             }}>
             Welcome to the {'\n'}Stacker Special Mode
@@ -215,7 +214,6 @@ const BallGameScreen = ({ setSelectedSPage }) => {
               fontSize: dimensions.width * 0.04,
               textAlign: 'left',
               marginTop: dimensions.height * 0.019,
-              // alignSelf: 'center',
 
             }}>
             In this mode, to score a counter, it is not enough to simply press the plus button. You will need to throw the ball into the basket, only after that you will be credited with a count.
@@ -503,7 +501,7 @@ const BallGameScreen = ({ setSelectedSPage }) => {
             </Text>
             <TouchableOpacity
               onPress={() => {
-                // setSelectedSPage('Home');
+                setSelectedSPage('Home');
               }}
               style={{
                 marginTop: dimensions.height * 0.0190002,

@@ -51,7 +51,7 @@ const SettingsScreen = ({ setSelectedSPage, isVibrationEnabled, setVibrationEnab
 
                 }}>
                     <TouchableOpacity onPress={() => {
-                        // setSelectedSPage('Home');
+                        setSelectedSPage('Home');
                     }}>
                         <ChevronLeftIcon size={dimensions.height * 0.05} color='white' />
                     </TouchableOpacity>
