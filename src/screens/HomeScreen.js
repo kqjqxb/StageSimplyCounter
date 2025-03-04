@@ -17,6 +17,7 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { BlurView } from '@react-native-community/blur';
 import SettingsScreen from './SettingsScreen';
+import StageTimerScreen from './StageTimerScreen';
 
 const fontMontserratBold = 'Montserrat-Bold';
 const fontMontserratRegular = 'Montserrat-Regular';
@@ -704,7 +705,9 @@ const HomeScreen = () => {
         <BallGameScreen setSelectedSPage={setSelectedSPage} />
       ) : selectedSPage === 'Loading' ? (
         <LoadingScreen setSelectedSPage={setSelectedSPage} />
-      ) : null}
+      ) : selectedSPage === 'TimerScreen' ? (
+        <StageTimerScreen setSelectedSPage={setSelectedSPage} />
+      ): null}
 
       {selectedSPage !== 'Game' && (
         <View style={{
@@ -713,7 +716,7 @@ const HomeScreen = () => {
           justifyContent: 'space-between',
           position: 'absolute',
           bottom: dimensions.height * 0.07,
-          width: dimensions.width * 0.77,
+          width: dimensions.width * 0.91,
           alignSelf: 'center',
           backgroundColor: '#1D2C38',
           borderRadius: dimensions.width * 0.019,
@@ -721,6 +724,30 @@ const HomeScreen = () => {
           borderColor: 'white',
           padding: dimensions.width * 0.016,
         }}>
+          <TouchableOpacity
+            onPress={() => [
+              setSelectedSPage('TimerScreen')
+            ]}
+            style={{
+              backgroundColor: '#4346FF',
+              borderRadius: dimensions.width * 0.019,
+              borderColor: 'white',
+              borderWidth: dimensions.width * 0.0021,
+              width: dimensions.width * 0.1,
+              height: dimensions.width * 0.1,
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginRight: dimensions.width * 0.019,
+            }}>
+            <Image
+              source={require('../assets/icons/timerIcon.png')}
+              style={{
+                width: dimensions.width * 0.068,
+                height: dimensions.width * 0.068,
+              }}
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
               setSelectedSPage('Settings')
@@ -730,16 +757,16 @@ const HomeScreen = () => {
               borderRadius: dimensions.width * 0.019,
               borderColor: 'white',
               borderWidth: dimensions.width * 0.0021,
-              width: dimensions.width * 0.14,
-              height: dimensions.width * 0.14,
+              width: dimensions.width * 0.1,
+              height: dimensions.width * 0.1,
               alignItems: 'center',
               justifyContent: 'center',
             }}>
             <Image
               source={require('../assets/icons/settingsIcon.png')}
               style={{
-                width: dimensions.width * 0.08,
-                height: dimensions.width * 0.08,
+                width: dimensions.width * 0.068,
+                height: dimensions.width * 0.068,
               }}
               resizeMode="contain"
             />
@@ -754,7 +781,7 @@ const HomeScreen = () => {
               justifyContent: 'center',
               backgroundColor: 'white',
               borderRadius: dimensions.width * 0.019,
-              height: dimensions.width * 0.14,
+              height: dimensions.width * 0.1,
               flexDirection: 'row',
               flex: 1,
               marginHorizontal: dimensions.width * 0.019,
@@ -789,16 +816,16 @@ const HomeScreen = () => {
               borderRadius: dimensions.width * 0.019,
               borderColor: 'white',
               borderWidth: dimensions.width * 0.0021,
-              width: dimensions.width * 0.14,
-              height: dimensions.width * 0.14,
+              width: dimensions.width * 0.1,
+              height: dimensions.width * 0.1,
               alignItems: 'center',
               justifyContent: 'center',
             }}>
             <Image
               source={require('../assets/icons/gameIcon.png')}
               style={{
-                width: dimensions.width * 0.08,
-                height: dimensions.width * 0.08,
+                width: dimensions.width * 0.068,
+                height: dimensions.width * 0.068,
               }}
               resizeMode="contain"
             />
