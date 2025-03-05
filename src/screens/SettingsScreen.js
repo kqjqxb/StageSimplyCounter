@@ -9,7 +9,6 @@ const fontMontserratBold = 'Montserrat-Bold';
 const SettingsScreen = ({ setSelectedSPage, isVibrationEnabled, setVibrationEnabled, isSoundEffEnabled, setSoundEffEnabled }) => {
     const [dimensions, setDimensions] = useState(Dimensions.get('window'));
 
-
     const toggleVibrationSwitch = () => {
         const newValue = !isVibrationEnabled;
         setVibrationEnabled(newValue);
@@ -29,7 +28,6 @@ const SettingsScreen = ({ setSelectedSPage, isVibrationEnabled, setVibrationEnab
             console.error("Error saving settings:", error);
         }
     };
-
 
     return (
         <View>

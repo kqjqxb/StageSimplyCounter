@@ -173,9 +173,7 @@ const BallGameScreen = ({ setSelectedSPage }) => {
             </Text>
           </View>
           <View></View>
-
         </SafeAreaView>
-
       </View>
 
       {!isGameStarted ? (
@@ -184,7 +182,6 @@ const BallGameScreen = ({ setSelectedSPage }) => {
           marginTop: dimensions.height * 0.25,
           width: dimensions.width * 0.9,
           alignSelf: 'center',
-
         }}>
           <Image
             source={require('../assets/images/ballImage.png')}
@@ -214,13 +211,11 @@ const BallGameScreen = ({ setSelectedSPage }) => {
               fontSize: dimensions.width * 0.04,
               textAlign: 'left',
               marginTop: dimensions.height * 0.019,
-
             }}>
             In this mode, to score a counter, it is not enough to simply press the plus button. You will need to throw the ball into the basket, only after that you will be credited with a count.
 
             {'\n\n'}This mode will help you get distracted from routine tasks, and relax while counting something less important. Enjoy!
           </Text>
-
 
           <TextInput
             placeholder="Enter title"
@@ -265,8 +260,6 @@ const BallGameScreen = ({ setSelectedSPage }) => {
               Save and start counting
             </Text>
           </TouchableOpacity>
-
-
         </View>
       ) : (
         <View style={{
@@ -327,9 +320,7 @@ const BallGameScreen = ({ setSelectedSPage }) => {
               }}>
               Counted
             </Text>
-
           </View>
-
 
           <SafeAreaView
             style={{
@@ -361,7 +352,6 @@ const BallGameScreen = ({ setSelectedSPage }) => {
             </Animated.View>
           </SafeAreaView>
 
-
           <View style={{
             position: 'absolute',
             bottom: 0,
@@ -369,16 +359,9 @@ const BallGameScreen = ({ setSelectedSPage }) => {
             backgroundColor: '#564753',
             height: dimensions.height * 0.1,
           }}>
-
           </View>
-
         </View>
       )}
-
-
-
-
-
 
       <Modal
         animationType="fade"
@@ -436,8 +419,6 @@ const BallGameScreen = ({ setSelectedSPage }) => {
           </SafeAreaView>
         </SafeAreaView>
       </Modal>
-
-
 
       <Modal
         animationType="fade"

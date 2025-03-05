@@ -567,8 +567,8 @@ const HomeScreen = () => {
                     }}
                     disabled={!title || !date || !time || countsCount === 0}
                     style={{
-                      paddingVertical: dimensions.width * 0.043,
-                      paddingHorizontal: dimensions.width * 0.04,
+                      paddingVertical: dimensions.width * 0.044,
+                      paddingHorizontal: dimensions.width * 0.04003,
                       backgroundColor: 'white',
                       borderRadius: dimensions.width * 0.014,
                       alignItems: 'center',

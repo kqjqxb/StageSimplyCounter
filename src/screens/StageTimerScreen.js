@@ -102,7 +102,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                 </Text>
             </View>
 
-
             <View style={{
                 marginTop: dimensions.height * 0.016,
                 width: dimensions.width * 0.9,
@@ -128,7 +127,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                     Time
                 </Text>
 
-
                 <Text
                     style={{
                         fontFamily: fontMontserratBold,
@@ -140,7 +138,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                     }}>
                     {formattedTime}
                 </Text>
-
 
                 <View style={{
                     flexDirection: 'row',
@@ -186,10 +183,7 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                             }}>
                             {isTimerStarted ? 'Pause' : 'Start'}
                         </Text>
-
                     </TouchableOpacity>
-
-
 
                     <TouchableOpacity
                         onPress={() => {
@@ -218,7 +212,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                         />
                     </TouchableOpacity>
                 </View>
-
 
                 <View style={{
                     backgroundColor: 'white',
@@ -250,7 +243,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                         Counted
                     </Text>
                 </View>
-
 
                 <View style={{
                     flexDirection: 'row',
@@ -317,7 +309,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                     </TouchableOpacity>
                 </View>
 
-
                 <Text
                     style={{
                         fontFamily: fontMontserratBold,
@@ -330,7 +321,6 @@ const StageTimerScreen = ({ setSelectedSPage, }) => {
                     }}>
                     Point per minute: {countPerMinute}
                 </Text>
-
             </View>
         </View>
     );

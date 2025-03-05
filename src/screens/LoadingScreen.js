@@ -10,7 +10,6 @@ const LoadingScreen = ({ setSelectedSPage }) => {
   const [dimensions, setDimensions] = useState(Dimensions.get('window'));
   const [showLoadImage, setShowLoadImage] = useState(true);
   const [showSplashImage, setShowSplashImage] = useState(false);
-
   const loadImageRef = useRef(null);
   const splashRef = useRef(null);
 
